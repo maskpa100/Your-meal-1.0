@@ -1,0 +1,47 @@
+.close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+.wrapper {
+  padding: 15px 30px;
+  .products {
+    margin: 20px 0;
+    height: 500px;
+    overflow-x: auto;
+    padding: 15px;
+    background-color: #f7f4f4;
+    .product {
+      display: flex;
+      padding: 10px 0;
+      border-bottom: 1px solid #bbb;
+      .left {
+        display: flex;
+        padding: 0 10px 0;
+        img {
+          background-color: #ebebeb;
+          border-radius: 15%;
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        .title {
+          font-weight: 600;
+        }
+        .total {
+          text-align: right;
+          font-weight: 700;
+        }
+      }
+    }
+    .allTotal {
+      text-align: right;
+      font-weight: 700;
+      padding: 20px 0 10px;
+    }
+  }
+}

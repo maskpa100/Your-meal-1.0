@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 7%;
+  .title {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .category {
+    width: 100%;
+    padding-top: 20px;
+    .items {
+      position: relative;
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid #969696;
+      border-radius: 17px;
+      /* стиль */
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      background-image: url("data:image/svg+xml,<svg height='15px' width='15px' viewBox='0 0 16 16' fill='%23c4e1ee' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+      background-repeat: no-repeat;
+      background-color: #fff;
+      background-position: calc(100% - 15px) center;
+    }
+  }
+  table {
+    margin-top: 30px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+  }
+  tbody tr td,
+  th {
+    border: 1px solid black;
+  }
+  td,
+  th {
+    padding: 10px;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    .watch {
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 8px;
+      border-radius: 13px;
+      cursor: pointer;
+    }
+    .editLink {
+      text-decoration: none;
+      .edit {
+        color: #fff;
+        padding: 8px;
+        border-radius: 13px;
+      }
+      .edit.active {
+        background-color: #1976d2;
+        cursor: pointer;
+      }
+      .edit.blocked {
+        background-color: #969696;
+        cursor: not-allowed;
+      }
+    }
+
+    .delete {
+      background-color: #d32f2f;
+      color: #fff;
+      padding: 8px;
+      border-radius: 13px;
+      cursor: pointer;
+    }
+    .delete.active {
+      background-color: #d32f2f;
+      cursor: pointer;
+    }
+    .delete.blocked {
+      background-color: #969696;
+      cursor: not-allowed;
+    }
+  }
+}

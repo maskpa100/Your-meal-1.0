@@ -1,0 +1,83 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  .form {
+    width: 100%;
+    padding: 0 7%;
+    .imgs {
+      display: inline-block;
+      margin-top: 15px;
+      position: relative;
+      .icon {
+        fill: red;
+        position: absolute;
+        z-index: 1;
+        top: -18px;
+        right: -95px;
+        cursor: pointer;
+      }
+      .img {
+        background: #ebebeb;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 20px;
+      }
+    }
+    .title {
+      width: 100%;
+      padding-top: 20px;
+      label {
+        margin: 5px 5px;
+        display: block;
+        font-size: 15px;
+      }
+      input {
+        font-size: 16px;
+        width: 100%;
+        border: 1px solid #969696;
+        padding: 15px;
+        border-radius: 17px;
+      }
+      textarea {
+        font-size: 16px;
+        width: 100%;
+        border: 1px solid #969696;
+        padding: 15px;
+        border-radius: 17px;
+        resize: none;
+      }
+    }
+    .category {
+      position: relative;
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid #969696;
+      border-radius: 17px;
+      /* стиль */
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      background-image: url("data:image/svg+xml,<svg height='15px' width='15px' viewBox='0 0 16 16' fill='%23c4e1ee' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>");
+      background-repeat: no-repeat;
+      background-color: #fff;
+      background-position: calc(100% - 15px) center;
+    }
+    .button {
+      width: 100%;
+      border: 0;
+      background-color: #1976d2;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 17px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+  }
+}
